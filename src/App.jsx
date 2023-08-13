@@ -1,10 +1,11 @@
+import TableView from "./pages/TableView/TableView";
 
 function App() {
 
   return (
-    <>
-      <h2>Hello world!</h2>
-    </>
+    <main className="bg-slate-100 h-screen w-screen grid place-items-center">
+      <TableView />
+    </main>
   )
 }
 

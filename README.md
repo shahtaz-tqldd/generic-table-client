@@ -1,8 +1,30 @@
-# React + Vite
+## Goal: Create a reusable abstraction component which can be used for all kinds of data tables.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features in terms of priority
+- Sorting
+- Global search
+- Filtering per column
+- Pagination
+- Mobile responsive: The table should start scrolling horizontally when the device becomes too small
 
-Currently, two official plugins are available:
+- You should provide an option to set a column fixed such that only that column is not scrolled
+- Row selection using checkboxes
+- Choosing what column should be displayed
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### In a later version
+- Column reordering (with DND)
+- Column width resizing
+- Row DND
+
+Persist table settings: useLocalStorage - https://usehooks.com
+
+## Tech stack
+- React 18
+- TailwindCSS (we also have access to the paid components)
+- ShadCN -> nice looking tables
+https://ui.shadcn.com/docs/components/data-table
+https://ui.shadcn.com/examples/tasks
+- Tanstack Table
+
+## Examples
+Directus: https://www.youtube.com/watch?v=ZjcfDToTU5o
